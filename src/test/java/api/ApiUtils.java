@@ -22,7 +22,7 @@ public class ApiUtils extends LogUtils {
         super.logInfo(verbo + "" + uri);
         super.logInfo("Body : \n" + body);
         super.logInfo("Headers : " + headers);
-        super.logInfo(" Params :" + params);
+        super.logInfo("Params :" + params);
 
         super.logInfo(" ******* Dados enviados no request *******");
         super.logInfo("Status code: " + response.statusCode());

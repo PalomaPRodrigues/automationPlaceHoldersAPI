@@ -2,10 +2,11 @@ package api;
 
 import static io.restassured.RestAssured.given;
 
-public class ApiRequest extends ApiUtils implements ApiVerbos{
+public class ApiRequest extends ApiUtils implements ApiVerbos {
     @Override
     public void GET() {
         response = given()
+                .request().log().all()
                 .relaxedHTTPSValidation()
                 .params(params)
                 .headers(headers)
@@ -16,6 +17,7 @@ public class ApiRequest extends ApiUtils implements ApiVerbos{
     @Override
     public void POST() {
         response = given()
+                .request().log().all()
                 .relaxedHTTPSValidation()
                 .params(params)
                 .headers(headers)
@@ -28,6 +30,7 @@ public class ApiRequest extends ApiUtils implements ApiVerbos{
     @Override
     public void PUT() {
         response = given()
+                .request().log().all()
                 .relaxedHTTPSValidation()
                 .params(params)
                 .headers(headers)
@@ -41,6 +44,7 @@ public class ApiRequest extends ApiUtils implements ApiVerbos{
     @Override
     public void PATCH() {
         response = given()
+                .request().log().all()
                 .relaxedHTTPSValidation()
                 .params(params)
                 .headers(headers)
@@ -53,10 +57,12 @@ public class ApiRequest extends ApiUtils implements ApiVerbos{
     @Override
     public void DELETE() {
         response = given()
+                .request().log().all()
                 .relaxedHTTPSValidation()
                 .params(params)
                 .headers(headers)
                 .delete(uri);
+
         super.log("DELETE");
 
     }

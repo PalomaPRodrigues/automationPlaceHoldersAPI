@@ -16,6 +16,7 @@ import java.io.IOException;
 public class RunnerTest {
 
     @AfterClass
+
     public static void report() throws IOException {
         Runtime.getRuntime().exec("cmd.exe /c mvn cluecumber-report:reporting");
 

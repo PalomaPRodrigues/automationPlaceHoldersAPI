@@ -12,6 +12,7 @@ import org.json.JSONObject;
 @Setter
 public class UserLombok {
 
+    private Integer postId;
     private String name;
     private String email;
     private String body;

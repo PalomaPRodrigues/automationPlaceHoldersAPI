@@ -27,7 +27,8 @@ Funcionalidade: Criar, editar e deletar contas de usuários
     E possua um usuario Cadastrado no api
     E altere os desse usuário
     Quando os dados serem alterados com sucesso
-    Então o status code do request deve ser 204
+    Então o status code do request deve ser 200
+
 
   @delete
   Cenario: Deletar um usuário Cadastrado na API PlaceHolders
@@ -35,4 +36,4 @@ Funcionalidade: Criar, editar e deletar contas de usuários
     E possua um usuario Cadastrado no api
     E delete esse usuário
     Quando o usuario é deletado com sucesso
-    Então o status code do request deve ser 204
+    Então o status code do request deve ser 200
