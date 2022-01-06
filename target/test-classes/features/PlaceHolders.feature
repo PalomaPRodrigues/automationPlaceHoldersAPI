@@ -29,6 +29,13 @@ Funcionalidade: Criar, editar e deletar contas de usuários
     Quando os dados serem alterados com sucesso
     Então o status code do request deve ser 200
 
+  @patch
+  Cenario: Alterar um usuário existente na API Gorest PATCH
+    Dado que passou placeHolder token valido
+    E possua um usuario Cadastrado no api
+    Quando altero  um ou mais dados do usuario
+    Quando todos dados serem alterados com sucesso
+    Então o status code do request deve ser 200
 
   @delete
   Cenario: Deletar um usuário Cadastrado na API PlaceHolders

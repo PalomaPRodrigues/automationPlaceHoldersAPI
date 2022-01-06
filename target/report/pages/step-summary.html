@@ -79,32 +79,38 @@ font-src * data: blob: 'unsafe-inline';"/>
     "labels": [
       "buscar esse usuário",
       "altere os desse usuário",
-      "possua um usuario Cadastrado no api",
       "que passou placeHolder token valido",
       "delete esse usuário",
+      "os dados serem alterados com sucesso",
+      "altero  um ou mais dados do usuario",
+      "o status code do request deve ser {}",
+      "envio um request de cadastro de usuario com dados validos",
+      "possua um usuario Cadastrado no api",
       "o usuario é deletado com sucesso",
       "o usuario deve ser criado corretamente",
-      "os dados serem alterados com sucesso",
       "os dados dos usuario serem retornados",
-      "o status code do request deve ser {}",
-      "envio um request de cadastro de usuario com dados validos"
+      "todos dados serem alterados com sucesso"
     ],
     "datasets": [
       {
         "data": [
           1,
-          0,
+          1,
+          5,
+          1,
+          1,
+          1,
+          5,
           1,
           4,
-          0,
-          0,
           1,
-          0,
           1,
-          2,
+          1,
           1
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -123,7 +129,9 @@ font-src * data: blob: 'unsafe-inline';"/>
         "data": [
           0,
           0,
-          2,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -134,6 +142,8 @@ font-src * data: blob: 'unsafe-inline';"/>
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -151,18 +161,22 @@ font-src * data: blob: 'unsafe-inline';"/>
       {
         "data": [
           0,
-          1,
           0,
           0,
-          1,
-          1,
           0,
-          1,
           0,
-          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -191,7 +205,7 @@ font-src * data: blob: 'unsafe-inline';"/>
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "11 Steps"
+            "labelString": "13 Steps"
           },
           "stepSize": 0.0
         }
@@ -200,7 +214,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 4,
+            "stepSize": 5,
             "display": true
           },
           "stacked": true,
@@ -303,7 +317,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2022-01-03 16:54:23</span>
+            <span class="text-light">2022-01-06 12:10:44</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -329,18 +343,18 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush" data-cluecumber-item="step-summary">
                 <li class="list-group-item">
-                    11         Steps
+                    13         Steps
  in
                     <br>
-                    4         Scenarios
+                    5         Scenarios
 
                 </li>
                 <li class="list-group-item">
-                    2 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    5 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
-                    2 failed     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
+                    0 failed     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
        title="failed"><span style="display:none">failed</span></i>
 
                     <br>
@@ -391,12 +405,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 463ms</a>
+                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 513ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 463ms</a>
+                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 513ms</a>
                         </td>
-                        <td class="text-right small">0m 00s 463ms</td>
+                        <td class="text-right small">0m 00s 513ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -405,32 +419,16 @@ font-src * data: blob: 'unsafe-inline';"/>
                             </span>
                         </td>
                         <td class="text-right"><strong>1</strong></td>
-                        <td class="text-right">0</td>
-                        <td class="text-right">0</td>
                         <td class="text-right">1</td>
-                        <td class="text-right small">
-                        </td>
-                        <td class="text-right small">
-                        </td>
-                        <td class="text-right small">0m 00s 000ms</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">
-                            <span data-toggle="tooltip" title="steps.PlaceSteps.possua_um_usuario_cadastrado_no_api()">
-                                <a href="pages/step-scenarios/step_78132090.html">possua um usuario Cadastrado no api</a>
-                            </span>
-                        </td>
-                        <td class="text-right"><strong>3</strong></td>
-                        <td class="text-right">1</td>
-                        <td class="text-right">2</td>
+                        <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 042ms</a>
+                                <a href="pages/scenario-detail/scenario_3.html">0m 00s 381ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 410ms</a>
+                                <a href="pages/scenario-detail/scenario_3.html">0m 00s 381ms</a>
                         </td>
-                        <td class="text-right small">0m 00s 169ms</td>
+                        <td class="text-right small">0m 00s 381ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -438,17 +436,17 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a href="pages/step-scenarios/step_1657969009.html">que passou placeHolder token valido</a>
                             </span>
                         </td>
-                        <td class="text-right"><strong>4</strong></td>
-                        <td class="text-right">4</td>
+                        <td class="text-right"><strong>5</strong></td>
+                        <td class="text-right">5</td>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
                                 <a href="pages/scenario-detail/scenario_2.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 019ms</a>
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 020ms</a>
                         </td>
-                        <td class="text-right small">0m 00s 007ms</td>
+                        <td class="text-right small">0m 00s 004ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -457,14 +455,106 @@ font-src * data: blob: 'unsafe-inline';"/>
                             </span>
                         </td>
                         <td class="text-right"><strong>1</strong></td>
-                        <td class="text-right">0</td>
-                        <td class="text-right">0</td>
                         <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
                         <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_5.html">0m 00s 380ms</a>
                         </td>
                         <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_5.html">0m 00s 380ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 380ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.PlaceSteps.os_dados_serem_alterados_com_sucesso()">
+                                <a href="pages/step-scenarios/step_01945441396.html">os dados serem alterados com sucesso</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_3.html">0m 00s 004ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_3.html">0m 00s 004ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 004ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.PlaceSteps.alteroUmOuMaisDadosDoUsuario()">
+                                <a href="pages/step-scenarios/step_0463498028.html">altero  um ou mais dados do usuario</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 388ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 388ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 388ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.PlaceSteps.o_status_code_do_request_deve_ser(java.lang.Integer)">
+                                <a href="pages/step-scenarios/step_1245797421.html">o status code do request deve ser {}</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>5</strong></td>
+                        <td class="text-right">5</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 000ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">0m 00s 000ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.PlaceSteps.envio_um_request_de_cadastro_de_usuario_com_dados_validos()">
+                                <a href="pages/step-scenarios/step_0469330453.html">envio um request de cadastro de usuario com dados validos</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 02s 425ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 02s 425ms</a>
+                        </td>
+                        <td class="text-right small">0m 02s 425ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="steps.PlaceSteps.possua_um_usuario_cadastrado_no_api()">
+                                <a href="pages/step-scenarios/step_78132090.html">possua um usuario Cadastrado no api</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>4</strong></td>
+                        <td class="text-right">4</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_3.html">0m 00s 400ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 430ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 418ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -473,12 +563,14 @@ font-src * data: blob: 'unsafe-inline';"/>
                             </span>
                         </td>
                         <td class="text-right"><strong>1</strong></td>
-                        <td class="text-right">0</td>
-                        <td class="text-right">0</td>
                         <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
                         <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_5.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_5.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">0m 00s 000ms</td>
                     </tr>
@@ -493,28 +585,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 134ms</a>
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 147ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 134ms</a>
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 147ms</a>
                         </td>
-                        <td class="text-right small">0m 00s 134ms</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">
-                            <span data-toggle="tooltip" title="steps.PlaceSteps.os_dados_serem_alterados_com_sucesso()">
-                                <a href="pages/step-scenarios/step_01945441396.html">os dados serem alterados com sucesso</a>
-                            </span>
-                        </td>
-                        <td class="text-right"><strong>1</strong></td>
-                        <td class="text-right">0</td>
-                        <td class="text-right">0</td>
-                        <td class="text-right">1</td>
-                        <td class="text-right small">
-                        </td>
-                        <td class="text-right small">
-                        </td>
-                        <td class="text-right small">0m 00s 000ms</td>
+                        <td class="text-right small">0m 00s 147ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -536,26 +612,8 @@ font-src * data: blob: 'unsafe-inline';"/>
                     </tr>
                     <tr>
                         <td class="text-left">
-                            <span data-toggle="tooltip" title="steps.PlaceSteps.o_status_code_do_request_deve_ser(java.lang.Integer)">
-                                <a href="pages/step-scenarios/step_1245797421.html">o status code do request deve ser {}</a>
-                            </span>
-                        </td>
-                        <td class="text-right"><strong>4</strong></td>
-                        <td class="text-right">2</td>
-                        <td class="text-right">0</td>
-                        <td class="text-right">2</td>
-                        <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_2.html">0m 00s 000ms</a>
-                        </td>
-                        <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 001ms</a>
-                        </td>
-                        <td class="text-right small">0m 00s 000ms</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">
-                            <span data-toggle="tooltip" title="steps.PlaceSteps.envio_um_request_de_cadastro_de_usuario_com_dados_validos()">
-                                <a href="pages/step-scenarios/step_0469330453.html">envio um request de cadastro de usuario com dados validos</a>
+                            <span data-toggle="tooltip" title="steps.PlaceSteps.todos_dados_serem_alterados_com_sucesso()">
+                                <a href="pages/step-scenarios/step_456714343.html">todos dados serem alterados com sucesso</a>
                             </span>
                         </td>
                         <td class="text-right"><strong>1</strong></td>
@@ -563,12 +621,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right">0</td>
                         <td class="text-right">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 02s 228ms</a>
+                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 000ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 02s 228ms</a>
+                                <a href="pages/scenario-detail/scenario_4.html">0m 00s 000ms</a>
                         </td>
-                        <td class="text-right small">0m 02s 228ms</td>
+                        <td class="text-right small">0m 00s 000ms</td>
                     </tr>
                 </tbody>
             </table>
@@ -581,7 +639,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2022-01-03 16:54:23.</span>
+        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2022-01-06 12:10:44.</span>
     </div>
 </footer>    </body>
     </html>

@@ -10,7 +10,7 @@ import java.io.IOException;
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"html:target/report.html","json:target/report/cucumber.json"},
                  features = {"src/test/resources/Features/"},
-                 glue = {"steps"}, // no glue coloca o nome do pacote que está o hooks
+                 glue = {"steps"},
                  tags = "@PlaceHolders")
 
 public class RunnerTest {

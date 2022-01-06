@@ -80,8 +80,8 @@ font-src * data: blob: 'unsafe-inline';"/>
       "steps.Hooks.Before(io.cucumber.java.Scenario)",
       "que passou placeHolder token valido",
       "possua um usuario Cadastrado no api",
-      "altero  um ou mais dados do usuario",
-      "todos dados serem alterados com sucesso",
+      "delete esse usuário",
+      "o usuario é deletado com sucesso",
       "o status code do request deve ser 200",
       "steps.Hooks.after()"
     ],
@@ -288,7 +288,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                             <a href="pages/feature-scenarios/feature_0.html">Criar, editar e deletar contas de usuários</a>
                         <span class="small">file:src/test/resources/Features/PlaceHolders.feature</span>
                     </h5>
-                    <h3>Alterar um usuário existente na API Gorest PATCH</h3>
+                    <h3>Deletar um usuário Cadastrado na API PlaceHolders</h3>
             </div>
 
     <div class="row" id="scenario-detail">
@@ -306,13 +306,13 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="card h-100">
                 <div class="card-header">Scenario Info</div>
             <div class="card-body">
-                <li class="list-group-item">Started on:<br>2022-01-06 12:10:37</li>
-                <li class="list-group-item">Ended on:<br>2022-01-06 12:10:38</li>
-            <li class="list-group-item">Test Runtime:<br>0m 00s 820ms</li>
+                <li class="list-group-item">Started on:<br>2022-01-06 12:10:38</li>
+                <li class="list-group-item">Ended on:<br>2022-01-06 12:10:39</li>
+            <li class="list-group-item">Test Runtime:<br>0m 00s 806ms</li>
             <li class="list-group-item">
                     <a href="pages/tag-scenarios/tag_PlaceHolders.html">@PlaceHolders</a>,
 
-                    <a href="pages/tag-scenarios/tag_patch.html">@patch</a>            </li>
+                    <a href="pages/tag-scenarios/tag_delete.html">@delete</a>            </li>
             </div>
         </div>
     </div>
@@ -382,7 +382,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 430ms
+                                0m 00s 423ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -391,13 +391,13 @@ font-src * data: blob: 'unsafe-inline';"/>
 
         <div class="row w-100 p-3 m-0 scenarioOutput">
             <div class="w-100 text-left small p-2"> ******* Dados enviados no request *******<br><br>POSThttps://jsonplaceholder.typicode.com/comments<br><br>Body : 
-{"name":"Carrol Bogisich","body":"Primeiro Commit","email":"simon.hoppe@yahoo.com"}<br><br>Headers : {Content-Type=application/json}<br><br> ******* Dados enviados no request *******<br><br>Status code: 201<br><br>Payload recebido : 
+{"name":"Brant Aufderhar","body":"Primeiro Commit","email":"everett.johnston@hotmail.com"}<br><br>Headers : {Content-Type=application/json}<br><br> ******* Dados enviados no request *******<br><br>Status code: 201<br><br>Payload recebido : 
 {
-    "name": "Carrol Bogisich",
+    "name": "Brant Aufderhar",
     "body": "Primeiro Commit",
-    "email": "simon.hoppe@yahoo.com",
+    "email": "everett.johnston@hotmail.com",
     "id": 501
-}<br><br>Headers : 388</div>
+}<br><br>Headers : 374</div>
         </div>
                         </div>
 
@@ -405,13 +405,13 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">3.</span>
-                                <span data-toggle="tooltip" title="steps.PlaceSteps.alteroUmOuMaisDadosDoUsuario()">
-                                    <a href="pages/step-scenarios/step_0463498028.html"><span
-                                                class="keyword">Quando </span> altero  um ou mais dados do usuario</a>
+                                <span data-toggle="tooltip" title="steps.PlaceSteps.delete_esse_usuário()">
+                                    <a href="pages/step-scenarios/step_221657845.html"><span
+                                                class="keyword">E </span> delete esse usuário</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 388ms
+                                0m 00s 380ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -419,15 +419,11 @@ font-src * data: blob: 'unsafe-inline';"/>
                             </div>
 
         <div class="row w-100 p-3 m-0 scenarioOutput">
-            <div class="w-100 text-left small p-2"> ******* Dados enviados no request *******<br><br>PATCHhttps://jsonplaceholder.typicode.com/comments/1<br><br>Body : 
-{"email":"carla.rodrigues@gmail.com"}<br><br>Headers : {Content-Type=application/json}<br><br> ******* Dados enviados no request *******<br><br>Status code: 200<br><br>Payload recebido : 
+            <div class="w-100 text-left small p-2"> ******* Dados enviados no request *******<br><br>DELETEhttps://jsonplaceholder.typicode.com/comments/1<br><br>Body : 
+{"name":"Brant Aufderhar","body":"Primeiro Commit","email":"everett.johnston@hotmail.com"}<br><br>Headers : {Content-Type=application/json}<br><br> ******* Dados enviados no request *******<br><br>Status code: 200<br><br>Payload recebido : 
 {
-    "postId": 1,
-    "id": 1,
-    "name": "id labore ex et quam laborum",
-    "email": "carla.rodrigues@gmail.com",
-    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
-}<br><br>Headers : 367</div>
+    
+}<br><br>Headers : 362</div>
         </div>
                         </div>
 
@@ -435,9 +431,9 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">4.</span>
-                                <span data-toggle="tooltip" title="steps.PlaceSteps.todos_dados_serem_alterados_com_sucesso()">
-                                    <a href="pages/step-scenarios/step_456714343.html"><span
-                                                class="keyword">Quando </span> todos dados serem alterados com sucesso</a>
+                                <span data-toggle="tooltip" title="steps.PlaceSteps.o_usuario_é_deletado_com_sucesso()">
+                                    <a href="pages/step-scenarios/step_01958351599.html"><span
+                                                class="keyword">Quando </span> o usuario é deletado com sucesso</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">

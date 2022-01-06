@@ -16,6 +16,8 @@ public class UserLombok {
     private String name;
     private String email;
     private String body;
+    private Integer userId;
+    private String title;
 
     public JSONObject getJson() throws JSONException {
         return new JSONObject(new Gson().toJson(this));

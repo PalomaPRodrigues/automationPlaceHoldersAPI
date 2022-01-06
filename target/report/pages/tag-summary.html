@@ -80,19 +80,22 @@ font-src * data: blob: 'unsafe-inline';"/>
       "@put",
       "@PlaceHolders",
       "@post",
+      "@patch",
       "@get",
       "@delete"
     ],
     "datasets": [
       {
         "data": [
-          0,
-          2,
+          1,
+          5,
           1,
           1,
-          0
+          1,
+          1
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -103,13 +106,15 @@ font-src * data: blob: 'unsafe-inline';"/>
       },
       {
         "data": [
-          1,
-          2,
           0,
           0,
-          1
+          0,
+          0,
+          0,
+          0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -124,9 +129,11 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -149,7 +156,7 @@ font-src * data: blob: 'unsafe-inline';"/>
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "5 Tags"
+            "labelString": "6 Tags"
           },
           "stepSize": 0.0
         }
@@ -158,7 +165,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 4,
+            "stepSize": 5,
             "display": true
           },
           "stacked": true,
@@ -261,7 +268,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2022-01-03 16:54:23</span>
+            <span class="text-light">2022-01-06 12:10:44</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -286,18 +293,18 @@ font-src * data: blob: 'unsafe-inline';"/>
                 <div class="card-header">Tag Summary</div>
             <div class="card-body">
             <ul class="list-group list-group-flush" data-cluecumber-item="tag-summary">
-                <li class="list-group-item">5         Tags
+                <li class="list-group-item">6         Tags
  in
                     <br>
-                    4 Tagged         Scenarios
+                    5 Tagged         Scenarios
 
                 </li>
                 <li class="list-group-item">
-                    2 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    5 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
-                    2 failed     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
+                    0 failed     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
        title="failed"><span style="display:none">failed</span></i>
 
                     <br>
@@ -337,21 +344,29 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-left"><a
                                     href="pages/tag-scenarios/tag_put.html">@put</a></td>
                         <td class="text-right"><strong>1</strong></td>
-                        <td class="text-right">0</td>
                         <td class="text-right">1</td>
+                        <td class="text-right">0</td>
                         <td class="text-right">0</td>
                     </tr>
                     <tr>
                         <td class="text-left"><a
                                     href="pages/tag-scenarios/tag_PlaceHolders.html">@PlaceHolders</a></td>
-                        <td class="text-right"><strong>4</strong></td>
-                        <td class="text-right">2</td>
-                        <td class="text-right">2</td>
+                        <td class="text-right"><strong>5</strong></td>
+                        <td class="text-right">5</td>
+                        <td class="text-right">0</td>
                         <td class="text-right">0</td>
                     </tr>
                     <tr>
                         <td class="text-left"><a
                                     href="pages/tag-scenarios/tag_post.html">@post</a></td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right">1</td>
+                        <td class="text-right">0</td>
+                        <td class="text-right">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
+                                    href="pages/tag-scenarios/tag_patch.html">@patch</a></td>
                         <td class="text-right"><strong>1</strong></td>
                         <td class="text-right">1</td>
                         <td class="text-right">0</td>
@@ -369,8 +384,8 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-left"><a
                                     href="pages/tag-scenarios/tag_delete.html">@delete</a></td>
                         <td class="text-right"><strong>1</strong></td>
-                        <td class="text-right">0</td>
                         <td class="text-right">1</td>
+                        <td class="text-right">0</td>
                         <td class="text-right">0</td>
                     </tr>
                 </tbody>
@@ -384,7 +399,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2022-01-03 16:54:23.</span>
+        <span>Cluecumber Report Plugin version 2.6.1 - Report generated on 2022-01-06 12:10:44.</span>
     </div>
 </footer>    </body>
     </html>
