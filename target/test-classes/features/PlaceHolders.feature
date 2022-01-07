@@ -4,7 +4,7 @@
 
 @PlaceHolders
 Funcionalidade: Criar, editar e deletar contas de usuários
-  Eu como Administrador do sistema, quero cadastrar,editar e deletar usuarios do sistema
+  Eu como Administrador do sistema, quero cadastrar, buscar, alterar e deletar usuarios do sistema
 
   @post
     Cenario: Cadastrar Usuário

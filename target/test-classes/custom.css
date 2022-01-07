@@ -1,7 +1,11 @@
 body {
-    background-color: black;
+    background-color: #1E3E8A;
 }
 
 h3,h4,h5 {
-    color: RoyalBlue ;
+    color: #BFDBFE;
+}
+
+scenario-detail .card-body {
+    color: red;
 }

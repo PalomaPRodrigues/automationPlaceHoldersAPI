@@ -10,7 +10,6 @@ public class Hooks extends ApiUtils {
     @Before
     public void Before(Scenario scenario) {
         ScenarioUtils.add(scenario);
-
     }
 
     @After

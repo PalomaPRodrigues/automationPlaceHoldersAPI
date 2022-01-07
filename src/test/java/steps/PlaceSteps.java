@@ -22,7 +22,6 @@ public class PlaceSteps extends ApiRequest {
 
     @Dado("que passou placeHolder token valido")
     public void que_passou_place_holder_token_valido() {
-
         System.out.println("API Não requer token");
     }
 
@@ -38,13 +37,11 @@ public class PlaceSteps extends ApiRequest {
 
         super.body = new JSONObject(new Gson().toJson(user));
         super.POST();
-
     }
 
     @Entao("o usuario deve ser criado corretamente")
     public void o_usuario_deve_ser_criado_corretamente() {
         assertEquals(user, response.jsonPath().getObject("", UserLombok.class), "Erro  na comparação do objeto!");
-
     }
 
     @Entao("o status code do request deve ser {int}")
@@ -64,12 +61,10 @@ public class PlaceSteps extends ApiRequest {
         super.headers = apiHeaders.placeHeaders();
         super.body = new JSONObject();
         super.GET();
-
     }
 
     @Quando("os dados dos usuario serem retornados")
     public void os_dados_dos_usuario_serem_retornados() {
-
         assertEquals(response.statusCode(), response.statusCode());
     }
 
@@ -84,7 +79,6 @@ public class PlaceSteps extends ApiRequest {
 
     @Quando("os dados serem alterados com sucesso")
     public void os_dados_serem_alterados_com_sucesso() {
-
         assertEquals(user, response.jsonPath().getObject("", UserLombok.class), "Erro  na comparação!");
     }
 
