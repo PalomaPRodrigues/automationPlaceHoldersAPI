@@ -8,7 +8,6 @@ public class ApiRequest extends ApiUtils implements ApiVerbos {
         response = given()
                 .request().log().all()
                 .relaxedHTTPSValidation()
-                .params(params)
                 .headers(headers)
                 .get(uri);
         super.log("GET");
@@ -19,7 +18,6 @@ public class ApiRequest extends ApiUtils implements ApiVerbos {
         response = given()
                 .request().log().all()
                 .relaxedHTTPSValidation()
-                .params(params)
                 .headers(headers)
                 .body(body.toString())
                 .post(uri);
@@ -32,7 +30,6 @@ public class ApiRequest extends ApiUtils implements ApiVerbos {
         response = given()
                 .request().log().all()
                 .relaxedHTTPSValidation()
-                .params(params)
                 .headers(headers)
                 .body(body.toString())
                 .put(uri);
@@ -46,7 +43,6 @@ public class ApiRequest extends ApiUtils implements ApiVerbos {
         response = given()
                 .request().log().all()
                 .relaxedHTTPSValidation()
-                .params(params)
                 .headers(headers)
                 .body(body.toString())
                 .patch(uri);
@@ -59,7 +55,6 @@ public class ApiRequest extends ApiUtils implements ApiVerbos {
         response = given()
                 .request().log().all()
                 .relaxedHTTPSValidation()
-                .params(params)
                 .headers(headers)
                 .delete(uri);
 

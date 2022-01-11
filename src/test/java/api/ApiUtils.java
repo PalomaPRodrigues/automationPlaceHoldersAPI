@@ -13,8 +13,6 @@ public class ApiUtils extends LogUtils {
     protected static JSONObject body;
     protected static String uri;
     protected static Map<String, String> headers = new HashMap<>();
-    protected static Map<String, String> params = new HashMap<>();
-    protected static String token;
 
     public void log(String verbo) {
 
@@ -22,7 +20,6 @@ public class ApiUtils extends LogUtils {
         super.logInfo(verbo + "" + uri);
         super.logInfo("Body : \n" + body);
         super.logInfo("Headers : " + headers);
-        super.logInfo("Params :" + params);
 
         super.logInfo(" ******* Dados enviados no request *******");
         super.logInfo("Status code: " + response.statusCode());

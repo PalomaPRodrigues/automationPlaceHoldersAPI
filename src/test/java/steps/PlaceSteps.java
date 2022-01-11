@@ -8,6 +8,7 @@ import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.json.JSONObject;
+import org.junit.Assert;
 import user.UserLombok;
 import utils.PropertiesUtils;
 
@@ -65,7 +66,7 @@ public class PlaceSteps extends ApiRequest {
 
     @Quando("os dados dos usuario serem retornados")
     public void os_dados_dos_usuario_serem_retornados() {
-        assertEquals(response.statusCode(), response.statusCode());
+        Assert.assertEquals(200, response.statusCode());
     }
 
     @Dado("altere os desse usuário")
@@ -93,7 +94,8 @@ public class PlaceSteps extends ApiRequest {
 
     @Quando("todos dados serem alterados com sucesso")
     public void todos_dados_serem_alterados_com_sucesso() {
-        assertEquals(user.getEmail(), user.getEmail());
+        assertEquals(body.getString("email"), response.jsonPath().getString("email"));
+
     }
 
     @Dado("delete esse usuário")
@@ -105,7 +107,7 @@ public class PlaceSteps extends ApiRequest {
 
     @Quando("o usuario é deletado com sucesso")
     public void o_usuario_é_deletado_com_sucesso() {
-        assertEquals(response.statusCode(), response.statusCode());
+        Assert.assertEquals(200, response.statusCode());
 
     }
 
