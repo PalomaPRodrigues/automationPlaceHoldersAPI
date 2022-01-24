@@ -10,7 +10,7 @@ public class PropertiesUtils {
     public String getProp(String key) {
         try {
             if (System.getProperty("env") == null) {
-                //getResourceAsStream irá ler meu arquivo (dev/hom)
+
                 properties.load(getClass().getClassLoader().getResourceAsStream("hom.properties"));
             } else {
                 properties.load(getClass().getClassLoader().getResourceAsStream(System.getProperty("env")));

@@ -7,6 +7,7 @@ import com.google.gson.Gson;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
+import io.restassured.path.json.JsonPath;
 import org.json.JSONObject;
 import org.junit.Assert;
 import user.UserLombok;
@@ -21,10 +22,11 @@ public class PlaceSteps extends ApiRequest {
     Faker faker = new Faker();
     UserLombok user;
 
-    @Dado("que passou placeHolder token valido")
-    public void que_passou_place_holder_token_valido() {
+    @Dado("que Api Placeholders não solicita token")
+    public void que_api_placeholders_não_solicita_token() {
         System.out.println("API Não requer token");
     }
+
 
     @Quando("envio um request de cadastro de usuario com dados validos")
     public void envio_um_request_de_cadastro_de_usuario_com_dados_validos() {
@@ -56,8 +58,8 @@ public class PlaceSteps extends ApiRequest {
         envio_um_request_de_cadastro_de_usuario_com_dados_validos();
     }
 
-    @Dado("buscar esse usuário")
-    public void buscar_esse_usuário() {
+    @Dado("consulta esse usuário")
+    public void consulta_esse_usuário() {
         super.uri = prop.getProp("uri_place") + "/" + response.jsonPath().getJsonObject("id=1");
         super.headers = apiHeaders.placeHeaders();
         super.body = new JSONObject();
@@ -66,11 +68,11 @@ public class PlaceSteps extends ApiRequest {
 
     @Quando("os dados dos usuario serem retornados")
     public void os_dados_dos_usuario_serem_retornados() {
-        Assert.assertEquals(200, response.statusCode());
+        assertEquals("id labore ex et quam laborum", response.jsonPath().getString("name"));
     }
 
-    @Dado("altere os desse usuário")
-    public void altere_os_desse_usuário() {
+    @Dado("altere os dados desse usuário")
+    public void altere_os_dados_desse_usuário() {
         super.uri = prop.getProp("uri_place") + "/" + response.jsonPath().getJsonObject("id=1");
         super.headers = apiHeaders.placeHeaders();
         user.setName("Carla");
@@ -107,8 +109,8 @@ public class PlaceSteps extends ApiRequest {
 
     @Quando("o usuario é deletado com sucesso")
     public void o_usuario_é_deletado_com_sucesso() {
-        Assert.assertEquals(200, response.statusCode());
 
+        Assert.assertEquals(200, response.statusCode());
     }
 
 }
