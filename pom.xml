@@ -30,18 +30,17 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <customPageTitle> Report PlaceHolders </customPageTitle>
+                    <customPageTitle>Report PlaceHolders</customPageTitle>
                     <customCss>src/test/resources/custom.css</customCss>
                     <sourceJsonReportDirectory>${project.build.directory}/report</sourceJsonReportDirectory>
                     <generatedHtmlReportDirectory>${project.build.directory}/report</generatedHtmlReportDirectory>
                 </configuration>
-
             </plugin>
         </plugins>
     </build>
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <dependencies>
