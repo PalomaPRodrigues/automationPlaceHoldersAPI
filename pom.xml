@@ -7,12 +7,17 @@
     <groupId>org.example</groupId>
     <artifactId>PlaceHolders</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>com.trivago.rta</groupId>
                 <artifactId>cluecumber-report-plugin</artifactId>
@@ -32,9 +37,15 @@
                     <sourceJsonReportDirectory>${project.build.directory}/report</sourceJsonReportDirectory>
                     <generatedHtmlReportDirectory>${project.build.directory}/report</generatedHtmlReportDirectory>
                 </configuration>
+
             </plugin>
         </plugins>
     </build>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
