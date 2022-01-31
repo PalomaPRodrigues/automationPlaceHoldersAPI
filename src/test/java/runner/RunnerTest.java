@@ -17,10 +17,11 @@ public class RunnerTest {
 
     @AfterClass
     public static void report() throws IOException {
+        if (System.getProperty("os.name").equals("Windows 10")) ;
         Runtime.getRuntime().exec("cmd.exe /c mvn cluecumber-report:reporting");
     }
 
     public static void pipeline() {
-        if (System.getProperty("os.name").equals("Windows 10")) ;
+        if (System.getProperty("os.name").equals("Windows 10"));
     }
 }
